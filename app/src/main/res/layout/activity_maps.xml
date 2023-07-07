@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="531dp"
+        tools:context=".MapsActivity"
+        tools:layout="@android:layout/simple_spinner_dropdown_item" />
+
+    <EditText
+        android:id="@+id/edittext1"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="550dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="latitude"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edittext2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="550dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="longitude"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="600dp"
+        android:onClick="updateButtonOnclick"
+        android:text="update" />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="650dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="textPersonName" />
+
+</FrameLayout>
